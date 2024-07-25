@@ -21,6 +21,22 @@ fetch("https://api.mercadolibre.com/sites/MLB/search?q=notebooks")
         btn.classList = "btn btn-primary";
         col.querySelector(".card-body").append(btn)
         btn.textContent = "Adicionar ao carrinho";
+        btn.addEventListener("click", e => {
+            e.preventDefault();
+            addToCart(product.id, {
+                title: product.title,
+                price: product.price
+            });
+            alert("Produto adicionado ao carrinho");
+        })
         rowProducts.append(col);
     })
 })
+function addToCart(id, product) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart === null) cart = {};
+    if (cart[id] == undefined) {
+        cart[id] = product;
+        localStorage.setItem ("cart", JSON.stringify(cart));
+    }
+}
