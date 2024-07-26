@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="O lojinha do SALIN"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu Principal"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a
-                    href="index.html">Início</a></li>
-                    <li class="nav-item"><a
-                        href="produtos.html">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="cart.html">Carrinho</a></li>
-                </ul>
-            </div>
-                
-</div>
-
-</nav>
-<main>
-    <div class="container mt-5">
-        <h1>Carrinho de Compras</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho de Compras</title>
         
-        <div class="row">
-
-        <div class="col-md-8">
-            <table class="table cart-table">
-                <thead>
-                    <th scope="col">Produto</th>
-                    <th scope="col">Preço</th>
-                    <th scope="col">Ações</th>
-                </thead>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
     
-                <tbody></tbody>
-            </table>
-        </div>
-        <div class="col md-4">
-<div class="card">
-<div class="card-body">
-<h2 class="card-title">RESUMO DO PEDIDO</h2>
-<p class="card-text"><strong>TOTAL: R$ 20</strong></p>
-<a href="" class="btn btb-primary btb-buy">FINALIZAR COMPRA</a>
-
-</div>
-
-</div>
-
-        </div>
-</div>
-</div>
-</main>
-<footer>
-<p>Desenvolvido por Gustavo Gonçalves Nunes.
-    PCD Web (Turma: 05).
-</p>
-
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-<script src="cart.js"></script>
-</body>
+    <body>
+        <header>
+            <h1><i class="fas fa-coins" style="color: gold" aria-hidden="true"></i>
+            SALIN STORE</h1>
+        </header>
+        
+        <nav class="navbar navbar-expand-lg mainmenu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="logo.png" alt="O lojinha do SALIN"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home" aria-hidden="true"></i>
+                        Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html"><i class="fas fa-laptop" aria-hidden="true"></i>
+                        Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="cart.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        Carrinho</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main>
+            <div class="container mt-5">
+                <div class="row">
+                    <h1>Carrinho de Compras</h1>
+                    
+                    <div class="col-md-8">
+                        <table class="table cart-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Produto</th>
+                                    <th scope="col">Preço</th>
+                                    <th scope="col">Ações</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="col md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">RESUMO DO PEDIDO</h2>
+                                <p class="card-text"><strong>TOTAL: R$ 20</strong></p>
+                                <a href="" class="btn btb-primary btb-buy">FINALIZAR COMPRA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="py-5">
+            <div class="container">
+                <div class="row">
+                    <p>Desenvolvido por Gustavo Gonçalves Nunes.</p>
+                    <p>PCD Web (Turma: 05).</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="cart.js"></script>
+    </body>
 </html>

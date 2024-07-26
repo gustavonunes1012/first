@@ -1,6 +1,6 @@
 const rowProducts = document.querySelector(".row-products");
 
-fetch("https://api.mercadolibre.com/sites/MLB/search?q=notebooks")
+fetch("https://api.mercadolibre.com/sites/MLB/search?q=notebooks&limit=13")
     .then(response => response.json())
     .then(data => {
         const limitedResults = data.results.slice(0, 12);
