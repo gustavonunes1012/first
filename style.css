@@ -1,0 +1,120 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+    background-color: #f5f5dc; /* Define a cor de fundo como bege clara */
+    color: #333; /* Define a cor do texto como cinza escuro */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background-image: url('padrão-arabe.png'); /* Adiciona uma imagem de fundo com padrão árabe */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #c49b66; /* Define a cor de fundo do cabeçalho como marrom dourado */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 20px 0; /* Adiciona preenchimento acima e abaixo do conteúdo */
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 5px solid #b38b57; /* Adiciona uma borda inferior dourada escura */
+}
+
+header h1 {
+    margin: 0; /* Remove margens ao redor do título */
+    font-size: 2.5rem; /* Define o tamanho da fonte do título */
+    font-family: 'Times New Roman', serif; /* Define a fonte como Times New Roman para um toque clássico */
+}
+
+/* Navegação */
+nav {
+    background-color: #b38b57; /* Define a cor de fundo da navegação como dourado escuro */
+    padding: 10px; /* Adiciona preenchimento ao redor da navegação */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    text-align: center; /* Centraliza os itens da lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 10px; /* Adiciona margem entre os itens da lista */
+}
+
+nav ul li a {
+    color: #fff; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Define o texto dos links como negrito */
+    transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #c49b66; /* Muda a cor do texto dos links para marrom dourado quando o mouse passa sobre eles */
+}
+
+/* Seção principal */
+main {
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo principal */
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento entre as seções */
+}
+
+section h2 {
+    background-color: #b38b57; /* Define a cor de fundo do título da seção como dourado escuro */
+    color: #fff; /* Define a cor do texto do título como branco */
+    padding: 10px; /* Adiciona preenchimento ao redor do título */
+    border-left: 10px solid #c49b66; /* Adiciona uma borda esquerda marrom dourado */
+    font-family: 'Times New Roman', serif; /* Define a fonte do título como Times New Roman */
+}
+
+section p {
+    padding: 10px; /* Adiciona preenchimento ao redor do parágrafo */
+    background-color: #fff; /* Define a cor de fundo do parágrafo como branco */
+    border: 1px solid #b38b57; /* Adiciona uma borda dourada escura ao parágrafo */
+    line-height: 1.8; /* Define um maior espaçamento entre linhas */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Rodapé */
+footer {
+    background-color: #c49b66; /* Define a cor de fundo do rodapé como marrom dourado */
+    color: #fff; /* Define a cor do texto do rodapé como branco */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px 0; /* Adiciona preenchimento acima e abaixo do conteúdo do rodapé */
+    border-top: 5px solid #b38b57; /* Adiciona uma borda superior dourada escura */
+}
+
+/* Estilos para botões */
+button {
+    background-color: #c49b66; /* Define a cor de fundo do botão como marrom dourado */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto do botão */
+    cursor: pointer; /* Muda o cursor para um ponteiro quando o mouse passa sobre o botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+    font-family: 'Arial', sans-serif; /* Define a fonte do botão como Arial */
+}
+
+button:hover {
+    background-color: #b38b57; /* Muda a cor de fundo do botão para dourado escuro quando o mouse passa sobre ele */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título do cabeçalho em telas menores */
+    }
+    
+    nav ul li {
+        display: block; /* Exibe os itens da lista de navegação em bloco (verticalmente) em telas menores */
+        margin: 10px 0; /* Adiciona margem entre os itens da lista de navegação em telas menores */
+    }
+}
